@@ -34,7 +34,7 @@ function weatherWidgetModule() {
         selector.classList.add('loading');
         loadWeather().then((data) => {
 
-            setTimeout(function () {
+            setTimeout(function () { //just to see the spinner
                 selector.classList.remove('loading');
                 if(data.error) {
                     selector.innerHTML = `<h3>${data.message}</h3>`;
