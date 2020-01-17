@@ -1,0 +1,42 @@
+.widgetData{
+    background: #31495C;
+    max-width: 220px;
+    width: 100%;
+}
+.widgetData.loading{
+    position: relative;
+    z-index: 1;
+    height: 100px;
+}
+.widgetData.loading:before{
+    position: absolute;
+    z-index: 2;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/loading.gif') rgba(49,73,92, 0.5) center no-repeat;
+    background-size: 30%;
+}
+.widgetData *{
+    color: #fff;
+}
+.widgetData h3{
+    margin: 0;
+    padding: 5px 10px;
+}
+.widgetData .weatherInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.widgetData .dataBlock{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+.widgetData .dataBlock span{
+    color: #fff;
+}
